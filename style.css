@@ -1,0 +1,114 @@
+/* import file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: #fff;
+    box-shadow: 20px 20px 20px 0 #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin-inline: 12px;
+    border-bottom-right-radius: 40%;
+}
+
+.calc-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 700px) {
+    .calc-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.input-container {
+    max-width: 100px;
+}
+
+.input-container input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input,
+input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error {
+    font-size: 10px;
+    color: #ff5757;
+    /* opacity: 0; */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    border: 0;
+    background: hsl(259, 100%, 65%);
+    font: inherit;
+    cursor: pointer;
+    border-radius: 50%;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.age-container {
+    font-size: 43px;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    .age-container {
+        font-size: 64px;
+    }
+}
+
+.age span {
+    color: hsl(259, 100%, 65%);
+}
+
+.text-error {
+    color: #ff5757;
+}
+
+.btn-error {
+    border: 1px solid #ff5757;
+}
